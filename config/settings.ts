@@ -3,9 +3,9 @@ import { Settings } from "@/config/types";
 
 /* Defining the settings for the site. */
 const settings: Settings = {
-  applicationName: "Blog Template",
+  applicationName: "Nghia's Blog",
   theme: {
-    primaryColor: "blue",
+    primaryColor: "green",
   },
   headerSize: 60,
   enablePageProgress: true,
