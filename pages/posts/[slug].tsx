@@ -65,6 +65,15 @@ const components: MDXComponents = {
   h5: (props: any) => <Title order={5} {...props} />,
   h6: (props: any) => <Title order={6} {...props} />,
   a: (props: any) => <Anchor {...props} />,
+  img: (props: any) => (
+    <img
+      style={{
+        maxWidth: "100%",
+        height: "auto",
+      }}
+      {...props}
+    />
+  ),
 };
 
 export default function PostPage({ post }: { post: MDXPost }) {
