@@ -1,12 +1,12 @@
 import Link from "next/link";
 
-import { Anchor, Burger, Group, Header } from "@mantine/core";
+import { Anchor, Burger, Group, Header, Image } from "@mantine/core";
 
 import useStyles from "@/layouts/AppBase/Header/styles";
 import { HeaderProps } from "@/layouts/AppBase/Header/types";
 
-import MantineLogo from "@/components/MantineLogo";
 import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
+import { NavLink } from "@/components/index";
 
 import getHeaderLinks from "@/helpers/header";
 
@@ -27,15 +27,29 @@ export default function HeaderSearch({ open, setOpen }: HeaderProps) {
             className={classes.burger}
             aria-label="open application menu"
           />
-          <Link passHref href={Routes.home.href}>
+          <Link passHref href={Routes.blog.href}>
             <Anchor className={classes.logoHref}>
-              <MantineLogo />
+              <Image
+                src="/me.jpeg"
+                alt="me"
+                width={40}
+                height={40}
+                radius="xl"
+              />
             </Anchor>
           </Link>
         </Group>
 
         <Group>
-          <Group className={classes.links}>{getHeaderLinks()}</Group>
+          <Group className={classes.links}>
+            {getHeaderLinks()}
+            <NavLink
+              label="Portfolio"
+              activeLinks={["/portfolio"]}
+              key="Portfolio"
+              link="https://kirbee.tech"
+            />
+          </Group>
           <ThemeToggle />
         </Group>
       </div>

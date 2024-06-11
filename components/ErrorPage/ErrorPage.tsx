@@ -27,7 +27,7 @@ export default function ErrorPage({
         {description}
       </Text>
       <Group position="center">
-        <Link href={Routes.home.href} passHref>
+        <Link href={Routes.blog.href} passHref>
           <Button
             variant="subtle"
             size="md"

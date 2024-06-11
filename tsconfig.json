@@ -22,6 +22,6 @@
       "@/helpers/*": ["helpers/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx.bak"],
   "exclude": ["node_modules"]
 }
