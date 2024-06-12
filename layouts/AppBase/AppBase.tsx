@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 import { AppShell, Container, Paper, Transition } from "@mantine/core";
 
+import { Analytics } from "@vercel/analytics/react";
 import Header from "layouts/AppBase/Header/Header";
 import useStyles from "layouts/AppBase/styles";
 
@@ -42,6 +43,7 @@ open state to false. */
         },
       })}
     >
+      <Analytics />
       <Container className={classes.children}>{children}</Container>
 
       <Transition transition="pop-top-right" duration={200} mounted={open}>
