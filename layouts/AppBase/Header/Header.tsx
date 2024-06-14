@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { Anchor, Burger, Group, Header, Image } from "@mantine/core";
+import { Anchor, Burger, Group, Header, Image, Text } from "@mantine/core";
 
 import useStyles from "@/layouts/AppBase/Header/styles";
 import { HeaderProps } from "@/layouts/AppBase/Header/types";
@@ -28,7 +28,7 @@ export default function HeaderSearch({ open, setOpen }: HeaderProps) {
             aria-label="open application menu"
           />
           <Link passHref href={Routes.blog.href}>
-            <Anchor className={classes.logoHref}>
+            <Anchor className={classes.logoHref} align="center"> 
               <Image
                 src="/me.jpeg"
                 alt="me"
