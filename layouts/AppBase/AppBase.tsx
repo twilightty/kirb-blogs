@@ -3,7 +3,7 @@ import { ReactNode, useEffect, useState } from "react";
 import { useRouter } from "next/router";
 
 import { AppShell, Container, Paper, Transition } from "@mantine/core";
-
+import Footer from "layouts/AppBase/Footer/Footer";
 import { Analytics } from "@vercel/analytics/react";
 import Header from "layouts/AppBase/Header/Header";
 import useStyles from "layouts/AppBase/styles";
@@ -36,6 +36,7 @@ open state to false. */
       fixed
       padding="md"
       header={<Header open={open} setOpen={setOpen} />}
+      footer={<Footer/>}
       styles={(theme) => ({
         main: {
           backgroundColor:
