@@ -1,20 +1,9 @@
-import Link from "next/link";
 
-import { Anchor, Burger, Group, Header, Image, Footer, Text } from "@mantine/core";
+import { Group, Footer, Text } from "@mantine/core";
 
-import useStyles from "@/layouts/AppBase/Header/styles";
 import { HeaderProps } from "@/layouts/AppBase/Header/types";
 
-import ThemeToggle from "@/components/ThemeToggle/ThemeToggle";
-import { NavLink } from "@/components/index";
-
-import getHeaderLinks from "@/helpers/header";
-
-import Routes from "@/config/routes";
-import settings from "@/config/settings";
-
 export default function FooterSearch() {
-  const { classes } = useStyles();
 
   return (
     <Footer height="auto">
