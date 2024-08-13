@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 
 import { AppShell, Container, Paper, Transition } from "@mantine/core";
 
+// eslint-disable-next-line import/no-unresolved
 import { Analytics } from "@vercel/analytics/react";
 import Footer from "layouts/AppBase/Footer/Footer";
 import Header from "layouts/AppBase/Header/Header";

@@ -19,7 +19,8 @@
       "@/layouts/*": ["layouts/*"],
       "@/components/*": ["components/*"],
       "@/config/*": ["config/*"],
-      "@/helpers/*": ["helpers/*"]
+      "@/helpers/*": ["helpers/*"],
+	  "@vercel/analytics/react": ["./node_modules/@vercel/analytics/dist/react"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx.bak"],
